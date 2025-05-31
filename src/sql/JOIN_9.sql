@@ -1,0 +1,7 @@
+SELECT DISTINCT d.ID, d.EMAIL, d.FIRST_NAME, d.LAST_NAME
+FROM DEVELOPERS d JOIN SKILLCODES s
+WHERE s.CODE = d.SKILL_CODE&s.CODE AND s.CATEGORY LIKE 'Front End'
+ORDER BY d.ID
+
+-- 자바스크립트 코드(256) = 자바스크립트 코드(256) & 산하의 스킬 코드(400) = 100000000 & 110010000 = 100000000
+-- & 연산자: 두 수가 모두 1인 경우에 1 출력
